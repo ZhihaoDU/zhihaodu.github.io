@@ -1,25 +1,146 @@
 <html>
 
-<head>
-<title>DAGV Demo</title>
-</head>
+  <head>
+    <title>DAGV Demo</title>
+  </head>
 
-<body>
-<p>Noisy Speech</p>
-<audio controls="controls">
-  <source src="noisy_babble_0_0.wav" type="audio/wav" />
-</audio>
-<br>
-<p>Enhanced Speech</p>
-<audio controls="controls">
-  <source src="rev_enhanced_babble_0_0.wav" type="audio/wav" />
-</audio>
-<br>
-<p>Clean Speech</p>
-<audio controls="controls">
-  <source src="clean_babble_0_0.wav" type="audio/wav" />
-</audio>
+  <body>
+    <center>
+      <table border="1">
+        <tr>
+          <th>Methods</th>
+          <th>Babble, 0dB</th>
+          <th>Factory, 0dB</th>
+        </tr>
 
-</body>
+        <tr>
+          <td>Noisy</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/noisy.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/noisy.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Clean</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/clean.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/clean.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>IRM</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/IRM.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/IRM.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>CRM</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/CRM.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/CRM.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>TimeMapping</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/TimeMapping.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/TimeMapping.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>SEGAN</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/SEGAN.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/SEGAN.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>DenoisingWavenet</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/DenoisingWavenet.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/DenoisingWavenet.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Ours</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/Ours.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/Ours.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Ours (Joint)</td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/babble_0/OursJoint.wav" type="audio/wav" />
+            </audio>
+          </td>
+          <td>
+            <audio controls="controls">
+              <source src="wav/factory2_0/OursJoint.wav" type="audio/wav" />
+            </audio>
+          </td>
+        </tr>
+
+      </table>
+    </center>
+  </body>
 
 </html>
