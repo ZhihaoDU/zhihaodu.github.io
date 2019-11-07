@@ -1,280 +1,325 @@
 <html>
 
-  <head>
+<head>
     <title>DAGV Demo</title>
-  </head>
+</head>
 
-  <body style="font-family: 'Times New Roman'">
-    <center>
-      <h2> Table I. Samples enhanced by different methods. </h2>
-      <table border="1">
+<body style="font-family: 'Times New Roman'">
+<center>
+    <div style="width: 800px; text-align: center">
+        <h1>
+            A Joint Framework of Denoising Autoencoder and Generative Vocoder for Monaural Speech Enhancement
+        </h1>
+    </div>
+    <div style="width: 800px; text-align: left">
+        <h2>
+            Part I. Enhancement Performance
+        </h2>
+    </div>
+
+    <div style="width: 800px; text-align: justify; font-size: large ">
+        <p>
+            To demonstrate the enhancement performance of different methods with respect to the
+            speech intelligibility and perceptual quality, two samples enhanced by IRM, CRM,
+            TimeMapping, SEGAN, DenoisingWavenet and our methods (<i>Mel+Flowavenet</i> and <i>Mel+Flowavenet+JT</i>)
+            are provided in Table I. These two noisy speeches are obtained by mixing the clean speeches with
+            the Babble and Factory noises at 0 dB, respectively. The corresponding clean speeches are provided
+            in the second row.
+        </p>
+    </div>
+
+    <h3> Table I. Samples enhanced by different methods. </h3>
+    <table border="1">
         <tr>
-          <th>Methods</th>
-          <th>Babble, 0dB</th>
-          <th>Factory, 0dB</th>
+            <th>Methods</th>
+            <th>Babble, 0dB</th>
+            <th>Factory, 0dB</th>
         </tr>
 
         <tr>
-          <td>Noisy</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/noisy.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/noisy.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>Noisy</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/noisy.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/noisy.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>Clean</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/clean.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/clean.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>Clean</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/clean.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/clean.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>IRM</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/IRM.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/IRM.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>IRM</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/IRM.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/IRM.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>CRM</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/CRM.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/CRM.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>CRM</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/CRM.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/CRM.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>TimeMapping</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/TimeMapping.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/TimeMapping.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>TimeMapping</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/TimeMapping.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/TimeMapping.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>SEGAN</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/SEGAN.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/SEGAN.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>SEGAN</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/SEGAN.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/SEGAN.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>DenoisingWavenet</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/DenoisingWavenet.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/DenoisingWavenet.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>DenoisingWavenet</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/DenoisingWavenet.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/DenoisingWavenet.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>Mel+Flowavenet</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/Ours.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/Ours.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td><i>Mel+Flowavenet</i></td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/Ours.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/Ours.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>Mel+Flowavenet-our+JT</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/babble_0/OursJoint.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/factory2_0/OursJoint.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td><i>Mel+Flowavenet-our+JT</i></td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/babble_0/OursJoint.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/factory2_0/OursJoint.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
+    </table>
+    <br>
+    <div style="width: 800px; text-align: left">
+        <h2>
+            Part II. Flowavenet Trained on the NSDTSEA corpus.
+        </h2>
+    </div>
 
-      </table>
+    <div style="width: 800px; text-align: justify; font-size: large ">
+        <p>
+            We try to train the Flowavenet on the NSDTSEA corpus, which comprises 28 and 2 speakers in the training and
+            test set, respectively. For each speaker in NSDTSEA corpus, the duration is about 0.3 hour. Compared with the LJ speech
+            dataset (24 hours recorded by a single speaker), NSDTSEA is a really small dataset. Using such a small dataset to train
+            Flowavenet will lead to the problem of speaker generalization. Several synthesized samples for trained and
+            untrained speakers are given in Table II and III, respectively.
+        </p>
+    </div>
+    <div style="width: 800px; text-align: center;">
+        <h3>
+            Table II. Samples synthesized by Flowavenet for trained speakers on
+            NSDTSEA dataset <br> (Avg. STOI (%): 89.95, Avg PESQ: 2.92).
+        </h3>
+    </div>
 
-      <h2> Table II. Samples generated by Flowavenet for trained speakers on <br> NSDTSEA dataset (Avg STOI (%): 89.95, Avg PESQ: 2.92). </h2>
-      <table border="1">
+    <table border="1">
         <tr>
-          <th>Utterance ID</th>
-          <th>Clean</th>
-          <th>Generated</th>
-        </tr>
-
-        <tr>
-          <td>p239_068</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p239_068.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p239_068_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
-        </tr>
-
-        <tr>
-          <td>p250_107</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p250_107.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p250_107_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <th>Utterance ID</th>
+            <th>Clean</th>
+            <th>Generated</th>
         </tr>
 
         <tr>
-          <td>p256_030</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p256_030.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p256_030_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>p239_068</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p239_068.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p239_068_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>p274_135</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p274_135.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_trained/p274_135_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
-        </tr>
-
-      </table>
-
-      <h2> Table III. Samples generated by Flowavenet for untrained speakers on <br> NSDTSEA dataset (Avg STOI (%): 86.18, Avg PESQ: 1.91). </h2>
-      <table border="1">
-        <tr>
-          <th>Utterance ID</th>
-          <th>Clean</th>
-          <th>Generated</th>
+            <td>p250_107</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p250_107.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p250_107_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>p232_051</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p232_051.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p232_051_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>p256_030</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p256_030.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p256_030_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>p232_123</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p232_123.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p232_123_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>p274_135</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p274_135.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_trained/p274_135_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
+        </tr>
+    </table>
+    <div style="width: 800px; text-align: center;">
+        <h3>
+            Table III. Samples synthesized by Flowavenet for untrained speakers on
+            NSDTSEA dataset <br> (Avg. STOI (%): 86.18, Avg PESQ: 1.91).
+        </h3>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Utterance ID</th>
+            <th>Clean</th>
+            <th>Generated</th>
         </tr>
 
         <tr>
-          <td>p257_026</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p257_026.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p257_026_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>p232_051</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p232_051.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p232_051_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
         <tr>
-          <td>p257_093</td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p257_093.wav" type="audio/wav" />
-            </audio>
-          </td>
-          <td>
-            <audio controls="controls">
-              <source src="wav/nsdtsea_untrained/p257_093_synthesis.wav" type="audio/wav" />
-            </audio>
-          </td>
+            <td>p232_123</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p232_123.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p232_123_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
         </tr>
 
-      </table>
+        <tr>
+            <td>p257_026</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p257_026.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p257_026_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
+        </tr>
 
-    </center>
-  </body>
+        <tr>
+            <td>p257_093</td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p257_093.wav" type="audio/wav" />
+                </audio>
+            </td>
+            <td>
+                <audio controls="controls">
+                    <source src="wav/nsdtsea_untrained/p257_093_synthesis.wav" type="audio/wav" />
+                </audio>
+            </td>
+        </tr>
+
+    </table>
+
+</center>
+</body>
 
 </html>
