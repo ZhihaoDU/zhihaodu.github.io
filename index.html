@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -6,160 +5,682 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>About | [“Welcome to Zhihao Du（杜志浩）’s homepage.”]</title>
-<meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="About" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://zhihaodu.github.io/" />
-<meta property="og:url" content="https://zhihaodu.github.io/" />
-<meta property="og:site_name" content="[“Welcome to Zhihao Du（杜志浩）’s homepage.”]" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="About" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"About","name":"[“Welcome to Zhihao Du（杜志浩）’s homepage.”]","url":"https://zhihaodu.github.io/"}</script>
-<!-- End Jekyll SEO tag -->
+    <!-- Begin SEO -->
+    <title>Zhihao Du (杜志浩) | Homepage</title>
+    <meta name="description" content="Homepage of Zhihao Du (杜志浩). Research on speech generative models (CosyVoice series, InspireMusic), multi-modal large language models, speech processing and deep learning." />
+    <meta name="generator" content="handcrafted" />
+    <meta property="og:title" content="Zhihao Du (杜志浩)" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="canonical" href="https://zhihaodu.github.io/" />
+    <meta property="og:url" content="https://zhihaodu.github.io/" />
+    <meta property="og:site_name" content="Zhihao Du (杜志浩)'s homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://zhihaodu.github.io/photo.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Zhihao Du (杜志浩)" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Zhihao Du","alternateName":"杜志浩","url":"https://zhihaodu.github.io/","image":"https://zhihaodu.github.io/photo.jpg","email":"duzhihao.china@gmail.com"}
+    </script>
+    <!-- End SEO -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=b3e4a4daa47f83a7474c6268eaa95beeb8e0e9c4">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+    <!-- Favicon: initials "ZD" -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%232b6cb0'/%3E%3Ctext%20x='50'%20y='68'%20font-family='Georgia,serif'%20font-size='52'%20font-weight='700'%20fill='white'%20text-anchor='middle'%3EZD%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="photo.jpg">
 
-<!-- Setup Google Analytics -->
+    <script>
+      // Apply saved theme before paint to avoid flash
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t) document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 
+    <style>
+      :root {
+        --bg: #f7f8fb;
+        --surface: #ffffff;
+        --surface-2: #f2f4f8;
+        --text: #1a2233;
+        --text-soft: #4a5568;
+        --muted: #77839a;
+        --border: #e6e9f0;
+        --brand: #2b6cb0;
+        --brand-2: #6b46c1;
+        --brand-soft: #ebf3fb;
+        --accent: #dd6b20;
+        --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
+        --shadow-lg: 0 12px 40px rgba(16, 24, 40, 0.12);
+        --radius: 16px;
+        --radius-sm: 10px;
+        --maxw: 1080px;
+      }
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+      :root[data-theme="dark"] {
+        --bg: #0e1117;
+        --surface: #161b26;
+        --surface-2: #1d2431;
+        --text: #e6eaf2;
+        --text-soft: #b3bcce;
+        --muted: #8a94a8;
+        --border: #262d3b;
+        --brand: #6ea8fe;
+        --brand-2: #b794f4;
+        --brand-soft: #1a2536;
+        --accent: #f6ad55;
+        --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+        --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+      }
 
-<!-- end custom head snippets -->
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0e1117;
+          --surface: #161b26;
+          --surface-2: #1d2431;
+          --text: #e6eaf2;
+          --text-soft: #b3bcce;
+          --muted: #8a94a8;
+          --border: #262d3b;
+          --brand: #6ea8fe;
+          --brand-2: #b794f4;
+          --brand-soft: #1a2536;
+          --accent: #f6ad55;
+          --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+          --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+        }
+      }
 
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+      body {
+        margin: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        font-size: 16px;
+      }
+      a { color: var(--brand); text-decoration: none; transition: color .15s ease; }
+      a:hover { color: var(--brand-2); text-decoration: underline; }
+
+      /* ---------- Top nav ---------- */
+      .nav {
+        position: sticky; top: 0; z-index: 50;
+        backdrop-filter: saturate(180%) blur(12px);
+        -webkit-backdrop-filter: saturate(180%) blur(12px);
+        background: color-mix(in srgb, var(--bg) 78%, transparent);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-inner {
+        max-width: var(--maxw); margin: 0 auto; padding: 12px 24px;
+        display: flex; align-items: center; gap: 18px; justify-content: space-between;
+      }
+      .nav-brand { font-weight: 700; letter-spacing: -0.01em; color: var(--text); white-space: nowrap; }
+      .nav-brand span { color: var(--muted); font-weight: 500; }
+      .nav-links { display: flex; gap: 4px; flex-wrap: wrap; }
+      .nav-links a {
+        color: var(--text-soft); padding: 6px 12px; border-radius: 999px;
+        font-size: 14px; font-weight: 500; text-decoration: none;
+      }
+      .nav-links a:hover { background: var(--surface-2); color: var(--text); text-decoration: none; }
+      .nav-right { display: flex; align-items: center; gap: 8px; }
+      .theme-toggle {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 38px; height: 38px; border-radius: 50%;
+        background: var(--surface); border: 1px solid var(--border);
+        color: var(--text-soft); cursor: pointer; padding: 0;
+        transition: all .18s ease; box-shadow: var(--shadow);
+      }
+      .theme-toggle:hover { color: var(--text); border-color: var(--brand); transform: translateY(-1px); }
+      .theme-toggle svg { width: 18px; height: 18px; }
+      .theme-toggle .sun { display: none; }
+      :root[data-theme="dark"] .theme-toggle .sun,
+      :root:not([data-theme="light"]) .theme-toggle .sun { display: block; }
+      :root[data-theme="dark"] .theme-toggle .moon,
+      :root:not([data-theme="light"]) .theme-toggle .moon { display: none; }
+      @media (prefers-color-scheme: light) {
+        :root:not([data-theme]) .theme-toggle .sun { display: none; }
+        :root:not([data-theme]) .theme-toggle .moon { display: block; }
+      }
+
+      /* ---------- Layout ---------- */
+      .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 80px; }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        margin: 40px 0 36px;
+        display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: center;
+      }
+      .hero-photo-wrap { position: relative; }
+      .hero-photo {
+        width: 200px; height: 200px; border-radius: 50%; object-fit: cover;
+        object-position: center 20%;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        display: block;
+      }
+      .hero h1 {
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.1; margin: 0 0 6px;
+        letter-spacing: -0.02em; font-weight: 600;
+      }
+      .hero .zh { color: var(--muted); font-weight: 500; }
+      .hero .tagline { color: var(--text-soft); font-size: 1.05rem; margin: 0 0 18px; max-width: 620px; }
+      .hero .role { display: inline-block; color: var(--brand); font-weight: 600; margin-bottom: 8px; font-size: .95rem; }
+
+      .contact-row { display: flex; flex-wrap: wrap; gap: 10px; }
+      .chip {
+        display: inline-flex; align-items: center; gap: 7px;
+        background: var(--surface); border: 1px solid var(--border);
+        color: var(--text-soft); padding: 7px 14px; border-radius: 999px;
+        font-size: 14px; font-weight: 500; box-shadow: var(--shadow); text-decoration: none;
+      }
+      .chip:hover { color: var(--text); border-color: var(--brand); text-decoration: none; transform: translateY(-1px); }
+      .chip svg { width: 16px; height: 16px; }
+      .chip.primary { background: var(--brand); color: #fff; border-color: transparent; }
+      .chip.primary:hover { background: var(--brand-2); color: #fff; }
+
+      /* ---------- Stats ---------- */
+      .stats {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 24px;
+      }
+      .stat {
+        background: var(--surface); border: 1px solid var(--border);
+        border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow);
+        text-decoration: none; display: block; transition: all .18s ease; position: relative; overflow: hidden;
+      }
+      .stat::after {
+        content: ""; position: absolute; right: -20px; top: -20px; width: 90px; height: 90px;
+        border-radius: 50%; background: var(--brand-soft); opacity: .6;
+      }
+      .stat:hover { transform: translateY(-2px); border-color: var(--brand); text-decoration: none; box-shadow: var(--shadow-lg); }
+      .stat .num {
+        position: relative; z-index: 1;
+        font-family: 'Newsreader', Georgia, serif; font-size: 2rem; font-weight: 600;
+        color: var(--text); line-height: 1; letter-spacing: -0.01em;
+      }
+      .stat .label { position: relative; z-index: 1; color: var(--text-soft); font-size: .88rem; margin-top: 6px; font-weight: 500; }
+      .stat .sublabel { position: relative; z-index: 1; color: var(--muted); font-size: .78rem; margin-top: 2px; }
+
+      /* ---------- Experience / timeline ---------- */
+      .timeline { list-style: none; margin: 0; padding: 0; }
+      .timeline li {
+        position: relative; padding: 0 0 22px 26px; border-left: 2px solid var(--border);
+      }
+      .timeline li:last-child { padding-bottom: 0; }
+      .timeline li::before {
+        content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px;
+        border-radius: 50%; background: var(--brand); border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--border);
+      }
+      .timeline .t-role { font-weight: 700; color: var(--text); font-size: 1rem; }
+      .timeline .t-org { color: var(--brand); font-weight: 600; font-size: .95rem; }
+      .timeline .t-time { color: var(--muted); font-size: .82rem; margin-top: 2px; }
+      .timeline .t-desc { color: var(--text-soft); font-size: .92rem; margin-top: 4px; }
+
+      /* ---------- Cards / sections ---------- */
+      .card {
+        background: var(--surface); border: 1px solid var(--border);
+        border-radius: var(--radius); padding: 28px 32px; margin-bottom: 24px;
+        box-shadow: var(--shadow);
+      }
+      .section-title {
+        display: flex; align-items: baseline; gap: 12px;
+        font-family: 'Newsreader', Georgia, serif; font-weight: 600;
+        font-size: 1.55rem; margin: 0 0 6px; letter-spacing: -0.01em;
+        scroll-margin-top: 80px;
+      }
+      .section-title .zh { color: var(--muted); font-size: 1.05rem; font-weight: 500; font-family: 'Inter', sans-serif; }
+      .section-sub { color: var(--muted); font-size: .92rem; margin: 0 0 20px; }
+      h3.sub {
+        font-size: 1.05rem; font-weight: 700; margin: 24px 0 10px; color: var(--text);
+        display: flex; align-items: center; gap: 8px;
+      }
+      h3.sub .zh { color: var(--muted); font-weight: 500; font-size: .9rem; }
+      h3.sub::before { content: ""; width: 4px; height: 16px; border-radius: 2px; background: var(--brand); display: inline-block; }
+
+      /* ---------- Highlights ---------- */
+      .highlights { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+      .highlights li {
+        background: var(--surface-2); border: 1px solid var(--border);
+        border-left: 3px solid var(--brand);
+        border-radius: var(--radius-sm); padding: 14px 18px; font-size: .96rem;
+        display: flex; gap: 12px; align-items: flex-start;
+      }
+      .highlights li .dot {
+        flex: 0 0 auto; margin-top: 7px; width: 8px; height: 8px; border-radius: 50%;
+        background: var(--brand); box-shadow: 0 0 0 4px var(--brand-soft);
+      }
+      .highlights img { vertical-align: middle; }
+
+      /* Links row inside items */
+      .links a {
+        display: inline-block; font-size: .82rem; font-weight: 600;
+        background: var(--brand-soft); color: var(--brand);
+        padding: 1px 9px; border-radius: 6px; margin: 0 3px; text-decoration: none;
+      }
+      .links a:hover { background: var(--brand); color: #fff; text-decoration: none; }
+
+      /* ---------- Publication list ---------- */
+      ol.pubs { margin: 0; padding: 0; list-style: none; counter-reset: pub; }
+      ol.pubs li {
+        counter-increment: pub; position: relative;
+        padding: 12px 0 12px 44px; border-bottom: 1px dashed var(--border);
+        font-size: .95rem; color: var(--text-soft);
+      }
+      ol.pubs li:last-child { border-bottom: none; }
+      ol.pubs li::before {
+        content: counter(pub); position: absolute; left: 0; top: 12px;
+        width: 28px; height: 28px; border-radius: 8px;
+        background: var(--surface-2); border: 1px solid var(--border);
+        color: var(--muted); font-size: .78rem; font-weight: 700;
+        display: flex; align-items: center; justify-content: center;
+      }
+      ol.pubs li:hover::before { background: var(--brand); color: #fff; border-color: transparent; }
+      .me { color: var(--text); font-weight: 700; }
+      .me u { text-decoration-color: var(--brand); text-underline-offset: 2px; }
+      .venue { color: var(--accent); font-weight: 600; font-style: normal; }
+
+      /* Featured / selected publications */
+      .featured { display: grid; gap: 12px; margin: 0 0 8px; }
+      .feat-item {
+        display: flex; gap: 14px; align-items: flex-start;
+        background: var(--surface-2); border: 1px solid var(--border);
+        border-radius: var(--radius-sm); padding: 14px 16px; transition: all .18s ease;
+      }
+      .feat-item:hover { border-color: var(--brand); transform: translateY(-1px); box-shadow: var(--shadow); }
+      .feat-tag {
+        flex: 0 0 auto; font-size: .72rem; font-weight: 700; letter-spacing: .03em;
+        background: var(--brand); color: #fff; padding: 4px 9px; border-radius: 6px; margin-top: 2px; white-space: nowrap;
+      }
+      .feat-body { font-size: .95rem; color: var(--text-soft); }
+      .feat-body .feat-title { color: var(--text); font-weight: 600; display: block; margin-bottom: 2px; }
+
+      /* Collapsible full list */
+      details.pub-fold { margin-top: 4px; }
+      details.pub-fold > summary {
+        cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px;
+        color: var(--brand); font-weight: 600; font-size: .92rem; padding: 8px 0; user-select: none;
+      }
+      details.pub-fold > summary::-webkit-details-marker { display: none; }
+      details.pub-fold > summary .chev { transition: transform .2s ease; }
+      details.pub-fold[open] > summary .chev { transform: rotate(180deg); }
+      details.pub-fold > summary:hover { color: var(--brand-2); }
+
+      /* GitHub star badge */
+      .star-badge {
+        display: inline-flex; align-items: center; gap: 5px; vertical-align: middle;
+        background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+        padding: 1px 8px; font-size: .82rem; font-weight: 700; color: var(--text);
+      }
+      .star-badge svg { width: 13px; height: 13px; color: #e3b341; }
+
+      /* ---------- Simple two column lists ---------- */
+      ul.plain, ol.plain { margin: 0; padding: 0; list-style: none; }
+      ul.plain li, ol.plain li {
+        padding: 8px 0 8px 22px; position: relative; color: var(--text-soft); font-size: .95rem;
+        border-bottom: 1px solid var(--border);
+      }
+      ul.plain li:last-child, ol.plain li:last-child { border-bottom: none; }
+      ul.plain li::before, ol.plain li::before {
+        content: "▹"; position: absolute; left: 0; color: var(--brand);
+      }
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px; }
+      .abbr { color: var(--brand); font-weight: 700; }
+
+      .about-text { color: var(--text-soft); font-size: 1rem; }
+      .about-text .me { color: var(--text); }
+
+      /* ---------- Footer ---------- */
+      footer {
+        text-align: center; color: var(--muted); font-size: .85rem;
+        padding: 32px 24px; border-top: 1px solid var(--border); margin-top: 20px;
+      }
+      .back-to-top {
+        position: fixed; right: 24px; bottom: 24px; z-index: 40;
+        width: 44px; height: 44px; border-radius: 50%;
+        background: var(--brand); color: #fff; display: flex; align-items: center; justify-content: center;
+        box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transition: all .25s ease;
+      }
+      .back-to-top.show { opacity: 1; visibility: visible; }
+      .back-to-top:hover { background: var(--brand-2); color: #fff; text-decoration: none; transform: translateY(-2px); }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 760px) {
+        .hero { grid-template-columns: 1fr; text-align: center; gap: 22px; justify-items: center; margin-top: 28px; }
+        .hero .tagline { margin-left: auto; margin-right: auto; }
+        .contact-row { justify-content: center; }
+        .grid-2 { grid-template-columns: 1fr; }
+        .stats { grid-template-columns: 1fr; }
+        .card { padding: 22px 20px; }
+        .nav-links { display: none; }
+        .wrap { padding: 0 16px 60px; }
+      }
+    </style>
   </head>
+
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://zhihaodu.github.io/">Welcome to Zhihao Du（杜志浩）’s homepage.</a></h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#top">Zhihao Du <span>杜志浩</span></a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#service">Service</a>
+            <a href="#opensource">Open Source</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle light/dark">
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-      <h2 id="about">Highlights</h2>
-      <ol>
-        <li>CosyVoice series have reached <img src="https://shields.io/github/stars/FunAudioLLM/CosyVoice" alt="15k"> stars</li>
-        <li>CosyVoice 3: Towards In-the-wild Speech Generation via Scaling-up and Post-training is <strong><u>open-sourced</u></strong>.[<a href="https://github.com/FunAudioLLM/CosyVoice">Code</a>][<a href="https://arxiv.org/abs/2505.17589">Paper</a>][<a href="https://funaudiollm.github.io/cosyvoice3/">Demos</a>]</li>
-        <li>MinMo: A Multimodal Large Language Model for Seamless Voice Interaction [Code][<a href="https://arxiv.org/abs/2501.06282">Paper</a>][<a href="https://funaudiollm.github.io/minmo/">Demos</a>]</li>
-        <li>CosyVoice 2: Scalable Streaming Speech Synthesis model has been open-sourced: [<a href="https://github.com/FunAudioLLM/CosyVoice">Code</a>][<a href="https://arxiv.org/abs/2412.10117">Paper</a>][<a href="https://funaudiollm.github.io/cosyvoice2/">Demos</a>]</li>
-        <li>CosyVoice: Large-scale Multilingual Zero-shot Text-to-speech Synthesizer has been open-sourced: [<a href="https://github.com/FunAudioLLM/CosyVoice">Code</a>][<a href="https://arxiv.org/abs/2407.05407">Paper</a>][<a href="https://fun-audio-llm.github.io/">Demos</a>]</li>
-        <li>FunAudioLLM has bee released at: [<a href="https://github.com/FunAudioLLM">Code</a>][<a href="https://arxiv.org/abs/2407.04051">Paper</a>]</li>
-      </ol>
+    <div class="wrap" id="top">
+      <!-- Hero -->
+      <header class="hero">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="photo.jpg" alt="Zhihao Du">
+        </div>
+        <div>
+          <span class="role">Researcher · Speech Generation & Multimodal LLMs</span>
+          <h1>Zhihao Du <span class="zh">杜志浩</span></h1>
+          <p class="tagline">Building speech generative models and multimodal large language models — creator of the <strong>CosyVoice</strong> series, <strong>MinMo</strong> &amp; <strong>LauraGPT</strong>, and contributor to <strong>InspireMusic</strong>.</p>
+          <div class="contact-row">
+            <a class="chip primary" href="https://github.com/FunAudioLLM/CosyVoice" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+              CosyVoice
+            </a>
+            <a class="chip" href="https://scholar.google.com/citations?user=Jzrv_XMAAAAJ&hl=zh-CN" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.77A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.27L24 9.5z"/></svg>
+              Google Scholar
+            </a>
+            <a class="chip" href="https://arxiv.org/a/du_z_1" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4zM4 9h16v2H4zM4 14h10v2H4zM4 19h10v2H4z"/></svg>
+              arXiv
+            </a>
+            <a class="chip" href="https://orcid.org/0000-0003-3509-9322" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 18.16H5.63V7.98h1.74v10.18zM6.5 6.92a1.01 1.01 0 1 1 0-2.02 1.01 1.01 0 0 1 0 2.02zm12.13 11.24h-1.73v-4.96c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62v5.04h-1.73V7.98h1.66v1.39h.02c.23-.44.8-1.5 2.32-1.5 2.48 0 2.94 1.63 2.94 3.75v6.54h.02z"/></svg>
+              ORCID
+            </a>
+            <a class="chip" href="https://www.linkedin.com/in/%E5%BF%97%E6%B5%A9-%E6%9D%9C-b786a1117/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.53C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+            <a class="chip" href="mailto:duzhihao.china@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Email
+            </a>
+            <a class="chip" href="dagv_demo/dzh.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              CV
+            </a>
+          </div>
+        </div>
+      </header>
 
-      <h2 id="about">About（关于）</h2>
+      <!-- Stats -->
+      <section class="stats">
+        <a class="stat" href="https://github.com/FunAudioLLM/CosyVoice" target="_blank" rel="noopener">
+          <div class="num">22k+</div>
+          <div class="label">CosyVoice GitHub Stars</div>
+          <div class="sublabel">FunAudioLLM / CosyVoice</div>
+        </a>
+        <a class="stat" href="https://scholar.google.com/citations?user=Jzrv_XMAAAAJ&hl=zh-CN" target="_blank" rel="noopener">
+          <div class="num">Citations</div>
+          <div class="label">Google Scholar Profile</div>
+          <div class="sublabel">View live citations &amp; h-index</div>
+        </a>
+        <a class="stat" href="#publications">
+          <div class="num">30+</div>
+          <div class="label">Publications</div>
+          <div class="sublabel">Journals &amp; top-tier conferences</div>
+        </a>
+      </section>
 
-<p>My research interests include speech generative models (e.g. CosyVoice series, InspireMusic), multi-modal large language models (e.g. LauraGPT, MinMo), speech processing and deep learning.
-  I recieved the Ph.D. degree with the School of Computer Science and Technology at Harbin Institute of Technology under the supervision of Jiqing Han, in 2021. 
-  I received the B.E. degree in software engineering from the College of Software of Inner Mongolia University under the supervision of Xueliang Zhang, in 2015. 
-  Last, but certainly not least, I'd like to thanks my wonderful wife for her understanding and supports.[<a href="dagv_demo/dzh.pdf">About Me</a>]</p>
+      <!-- Highlights -->
+      <section class="card">
+        <h2 class="section-title">Highlights <span class="zh">近期动态</span></h2>
+        <ul class="highlights">
+          <li><span class="dot"></span><span>CosyVoice series have reached <span class="star-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>22k+</span> stars on GitHub.</span></li>
+          <li><span class="dot"></span><span><strong>CosyVoice 3</strong>: Towards In-the-wild Speech Generation via Scaling-up and Post-training is <strong>open-sourced</strong>. <span class="links"><a href="https://github.com/FunAudioLLM/CosyVoice">Code</a><a href="https://arxiv.org/abs/2505.17589">Paper</a><a href="https://funaudiollm.github.io/cosyvoice3/">Demos</a></span></span></li>
+          <li><span class="dot"></span><span><strong>MinMo</strong>: A Multimodal Large Language Model for Seamless Voice Interaction. <span class="links"><a href="https://arxiv.org/abs/2501.06282">Paper</a><a href="https://funaudiollm.github.io/minmo/">Demos</a></span></span></li>
+          <li><span class="dot"></span><span><strong>CosyVoice 2</strong>: Scalable Streaming Speech Synthesis model open-sourced. <span class="links"><a href="https://github.com/FunAudioLLM/CosyVoice">Code</a><a href="https://arxiv.org/abs/2412.10117">Paper</a><a href="https://funaudiollm.github.io/cosyvoice2/">Demos</a></span></span></li>
+          <li><span class="dot"></span><span><strong>CosyVoice</strong>: Large-scale Multilingual Zero-shot TTS Synthesizer open-sourced. <span class="links"><a href="https://github.com/FunAudioLLM/CosyVoice">Code</a><a href="https://arxiv.org/abs/2407.05407">Paper</a><a href="https://fun-audio-llm.github.io/">Demos</a></span></span></li>
+          <li><span class="dot"></span><span><strong>FunAudioLLM</strong> has been released. <span class="links"><a href="https://github.com/FunAudioLLM">Code</a><a href="https://arxiv.org/abs/2407.04051">Paper</a></span></span></li>
+        </ul>
+      </section>
 
-<h2 id="publications">Publications（出版物）</h2>
+      <!-- About -->
+      <section class="card">
+        <h2 class="section-title" id="about">About <span class="zh">关于</span></h2>
+        <p class="about-text">My research interests include <strong>speech generative models</strong> (e.g. CosyVoice series, InspireMusic), <strong>multi-modal large language models</strong> (e.g. LauraGPT, MinMo), speech processing and deep learning.</p>
+        <p class="about-text">I received the <strong>Ph.D. degree</strong> at the School of Computer Science and Technology, Harbin Institute of Technology, under the supervision of Prof. Jiqing Han, in 2021. I received the <strong>B.E. degree</strong> in software engineering from the College of Software, Inner Mongolia University, under the supervision of Prof. Xueliang Zhang, in 2015.</p>
+        <p class="about-text">Last, but certainly not least, I'd like to thank my wonderful wife for her understanding and support. <span class="links"><a href="dagv_demo/dzh.pdf">About Me</a></span></p>
+      </section>
 
-<p>(Note: Most of my papers can be found on arxiv.)</p>
+      <!-- Experience -->
+      <section class="card">
+        <h2 class="section-title" id="experience">Experience &amp; Education <span class="zh">经历 &amp; 教育</span></h2>
+        <ul class="timeline">
+          <li>
+            <div class="t-role">Researcher · Speech Generation &amp; Multimodal LLMs</div>
+            <div class="t-org">Speech Team, Tongyi Lab, Alibaba Group（通义实验室）</div>
+            <div class="t-time">2021 – Present</div>
+            <div class="t-desc">Creator of the <strong>CosyVoice</strong> series, <strong>MinMo</strong>, <strong>LauraGPT</strong>, <strong>FunCodec</strong> and <strong>FunAudioLLM</strong>; core contributor to <strong>FunASR</strong> and <strong>InspireMusic</strong>.</div>
+          </li>
+          <li>
+            <div class="t-role">Ph.D. in Computer Science and Technology</div>
+            <div class="t-org">Harbin Institute of Technology（哈尔滨工业大学）</div>
+            <div class="t-time">2015 – 2021 · Advisor: Prof. Jiqing Han</div>
+            <div class="t-desc">Research on monaural speech enhancement based on prior information at different semantic levels.</div>
+          </li>
+          <li>
+            <div class="t-role">B.E. in Software Engineering</div>
+            <div class="t-org">Inner Mongolia University（内蒙古大学）</div>
+            <div class="t-time">2011 – 2015 · Advisor: Prof. Xueliang Zhang</div>
+          </li>
+        </ul>
+      </section>
 
-<h3 id="journal--papers">Journal  Papers（期刊论文）</h3>
+      <!-- Publications -->
+      <section class="card">
+        <h2 class="section-title" id="publications">Publications <span class="zh">出版物</span></h2>
+        <p class="section-sub">Note: most of my papers can be found on arXiv.</p>
 
-<ol>
-  <li><strong><u>Zhihao Du</u></strong>, Xueliang Zhang, Jiqing Han. A joint framework of denoising autoencoder and generative vocoder for monaural speech enhancement. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2020. <a href="https://zhihaodu.github.io/dagv_demo/">View Demos</a></li>
-  <li>Yue Gu, <strong><u>Zhihao Du</u><sup>†</sup></strong>, Ying Shi, Shiliang Zhang, Qian Chen, Jiqing Han<sup>†</sup>. Enhancing the Robustness of Contextual ASR to Varying Biasing Information Volumes Through Purified Semantic Correlation Joint Modeling. IEEE Transactions on Audio, Speech, and Language Processing, 2025.</li>
-  <li>Yue Gu, <strong><u>Zhihao Du</u><sup>†</sup></strong>, Ying Shi, Jiqing Han<sup>†</sup>, Yongjun He. Knowledge-Decoupled Functionally Invariant Path with Synthetic Personal Data for Personalized ASR. IEEE Signal Processing Letter, 2025.</li>
-</ol>
+        <h3 class="sub">Selected Publications <span class="zh">代表作</span></h3>
+        <div class="featured">
+          <div class="feat-item">
+            <span class="feat-tag">2025</span>
+            <div class="feat-body"><span class="feat-title">CosyVoice 3: Towards In-the-wild Speech Generation via Scaling-up and Post-training</span><span class="me"><u>Zhihao Du</u></span>, Changfeng Gao, Yuxuan Wang, et al. <span class="links"><a href="https://github.com/FunAudioLLM/CosyVoice">Code</a><a href="https://arxiv.org/abs/2505.17589">Paper</a><a href="https://funaudiollm.github.io/cosyvoice3/">Demos</a></span></div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-tag">2025</span>
+            <div class="feat-body"><span class="feat-title">MinMo: A Multimodal Large Language Model for Seamless Voice Interaction</span>Qian Chen, ..., <span class="me"><u>Zhihao Du</u></span>, et al. <span class="links"><a href="https://arxiv.org/abs/2501.06282">Paper</a><a href="https://funaudiollm.github.io/minmo/">Demos</a></span></div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-tag">2024</span>
+            <div class="feat-body"><span class="feat-title">CosyVoice 2: Scalable Streaming Speech Synthesis with Large Language Models</span><span class="me"><u>Zhihao Du</u></span>, Yuxuan Wang, Qian Chen, et al. <span class="links"><a href="https://github.com/FunAudioLLM/CosyVoice">Code</a><a href="https://arxiv.org/abs/2412.10117">Paper</a><a href="https://funaudiollm.github.io/cosyvoice2/">Demos</a></span></div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-tag">2024</span>
+            <div class="feat-body"><span class="feat-title">CosyVoice: A Scalable Multilingual Zero-shot TTS Synthesizer based on Supervised Semantic Tokens</span><span class="me"><u>Zhihao Du</u></span>, Qian Chen, Shiliang Zhang, et al. <span class="links"><a href="https://github.com/FunAudioLLM/CosyVoice">Code</a><a href="https://arxiv.org/abs/2407.05407">Paper</a><a href="https://fun-audio-llm.github.io/">Demos</a></span></div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-tag">2024</span>
+            <div class="feat-body"><span class="feat-title">FunCodec: A Fundamental, Reproducible and Integrable Open-source Toolkit for Neural Speech Codec</span><span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Kai Hu, Siqi Zheng. <span class="venue">ICASSP 2024</span></div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-tag">2023</span>
+            <div class="feat-body"><span class="feat-title">LauraGPT: Listen, Attend, Understand, and Regenerate Audio with GPT</span><span class="me"><u>Zhihao Du</u></span>, Jiaming Wang, Qian Chen, et al. <span class="links"><a href="https://arxiv.org/abs/2310.04673">Paper</a></span></div>
+          </div>
+        </div>
 
-<h3 id="conference-papers">Conference Papers（会议论文）</h3>
+        <details class="pub-fold">
+          <summary>
+            Show full publication list
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
 
-<ol>
-  <li>Guanrou Yang, Chen Yang, Qian Chen, Ziyang Ma, Wenxi Chen, Wen Wang, tianrui wang, Yifan Yang, Zhikang Niu, Wenrui Liu, Fan Yu, <strong><u>Zhihao Du</u></strong>, Zhifu Gao, ShiLiang Zhang, Xie Chen, "EmoVoice: LLM-based Emotional Text-To-Speech Model with Freestyle Text Prompting", ACM MM 2025</li>
-  <li>Qinglin Zhang, Luyao Cheng, Chong Deng, Qian Chen, Wen Wang, Siqi Zheng, Jiaqing Liu, Hai Yu, Chao-Hong Tan, <strong><u>Zhihao Du</u></strong>, ShiLiang Zhang, "OmniFlatten: An End-to-end GPT Model for Seamless Voice Conversation", ACL 2025</li>
-  <li>Changfeng Gao, <strong><u>Zhihao Du</u></strong>, Shiliang Zhang,  Differentiable Reward Optimization for LLM based TTS system, INTERSPEECH 2025</li>
-  <li>Xiang Lyu, Yuxuan Wang, Tianyu Zhao, Hao Wang, Huadai Liu, <strong><u>Zhihao Du</u></strong>, Build LLM-base Zero-Shot Streaming TTS System with CosyVoice. ICASSP 2025</li>
-  <li>Guanrou Yang, Fan Yu, Ziyang Ma, <strong><u>Zhihao Du</u></strong>, Zhifu Gao, Shiliang Zhang, Xie Chen, Enhancing Low-Resource ASR through Versatile TTS: Bridging the Data Gap. ICASSP 2025</li>
-  <li>Ziyang Ma, Guanrou Yang, Yifan Yang, Zhifu Gao, Jiaming Wang, <strong><u>Zhihao Du</u></strong>, Fan Yu, Qian Chen, Siqi Zheng, ShiLiang Zhang, Xie Chen, Speech Recognition Meets Large Language Model: Benchmarking, Models, and Exploration. AAAI 2025(Oral)</li>
-  <li>Yue Gu, <strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Jiqing Han, Yongjun He, Personality-aware Training based Speaker Adaptation for End-to-end Speech Recognition. INTERSPEECH 2024 <a href="https://www.isca-archive.org/interspeech_2024/gu24b_interspeech.pdf">[Paper]</a></li>
-  <li><strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Kai Hu, Siqi Zheng, Funcodec: A Fundamental, Reproducible and Integrable Open-source Toolkit for Neural Speech Codec. ICASSP 2024</li>
-  <li>Mohan Shi, <strong><u>Zhihao Du</u></strong>, et al., A Comparative Study on Multichannel Speaker-Attributed Automatic Speech Recognition in Multi-Party Meetings. APSIPA 2023</li>
-  <li>Yangze Li, Fan Yu, Yuhao Liang, Pengcheng Guo, Mohan Shi, <strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Lei Xie, Sa-Paraformer: Non-Autoregressive End-To-End Speaker-Attributed ASR. ASRU 2023</li>
-  <li>Yuhao Liang, Mohan Shi, Fan Yu, Yangze Li, Shiliang Zhang, <strong><u>Zhihao Du</u></strong>, Qian Chen, Lei Xie, Yanmin Qian, Jian Wu, Zhuo Chen, Kong Aik Lee, Zhijie Yan, Hui Bu, The Second Multi-Channel Multi-Party Meeting Transcription Challenge (M2MeT 2.0): A Benchmark for Speaker-Attributed ASR. ASRU 2023</li>
-  <li>Yue Gu, <strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Qian Chen, Jiqing Han, Personality-aware Training based Speaker Adaptation for End-to-end Speech Recognition. INTERSPEECH 2023 <a href="https://zhihaodu.github.io/gu2023pat.pdf">[Paper]</a></li>
-  <li>Mohan Shi, <strong><u>Zhihao Du</u></strong>, Qian Chen, Fan Yu, Yangze Li, Shiliang Zhang, Jie Zhang, Lirong Dai, CASA-ASR: Context-Aware Speaker-Attributed ASR. INTERSPEECH 2023</li>
-  <li>Zhifu Gao, Zerui Li, Jiaming Wang, Haoneng Luo, Xian Shi, Mengzhe Chen, Yabin Li, Lingyun Zuo, <strong><u>Zhihao Du</u></strong>, Zhangyu Xiao, Shiliang Zhang, FunASR: A Fundamental End-to-End Speech Recognition Toolkit. INTERSPEECH 2023</li>
-  <li>Jiaming Wang*, <strong><u>Zhihao Du*</u></strong>, Shiliang Zhang. TOLD: A Novel Two-stage Overlap-aware Framework for Speaker Diarization. ICASSP 2023 (equal contribution)</li>
-  <li><strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Siqi Zheng, Zhijie Yan. Speaker Overlap-aware Neural Diarization for Multi-party Meeting Analysis. EMNLP 2022 (long paper)</li>
-  <li>Yuxiao Lin, <strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Fan Yu, Zhou Zhao, Fei Wu, Separate-to-Recognize: Joint Multi-target Speech Separation and Speech Recognition for Speaker-attributed ASR. ISCSLP 2022</li>
-  <li>Fan Yu, Shiliang Zhang, Pengcheng Guo, Yuhao Liang, <strong><u>Zhihao Du</u></strong>, et.al. MFCCA: Multi-Frame Cross-Channel attention for multi-speaker ASR in Multi-party meeting scenario. SLT 2022</li>
-  <li>Fan Yu, <strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Yuxiao Lin, Lei Xie. A Comparative Study on Speaker-attributed Automatic Speech Recognition in Multi-party Meetings. ICASSP 2022</li>
-  <li>Fan Yu, Shiliang Zhang, Pengcheng Guo, Yihui Fu, <strong><u>Zhihao Du</u></strong>, et.al. Summary on the ICASSP 2022 multi-channel multi-party meeting transcription grand challenge. ICASSP 2022</li>
-  <li>Fan Yu, Shiliang Zhang, Yihui Fu, Lei Xie, Siqi Zheng, <strong><u>Zhihao Du</u></strong>, et.al. M2MeT: The ICASSP 2022 multi-channel multi-party meeting transcription challenge. ICASSP 2022</li>
-  <li>Hongwei Song, Jiqing Han, Shiwen Deng, <strong><u>Zhihao Du</u></strong>. Capturing Temporal Dependencies Through Future Prediction for CNN-Based Audio Classifiers. ICASSP 2021</li>
-  <li><strong><u>Zhihao Du</u></strong>, Ming Lei, Jiqing Han, Shiliang Zhang. Pan: Phoneme-aware network for monaural speech enhancement. ICASSP 2020.</li>
-  <li><strong><u>Zhihao Du</u></strong>, Ming Lei, Jiqing Han, Shiliang Zhang. Self-Supervised Adversarial Multi-Task Learning for Vocoder-Based Monaural Speech Enhancement. INTERSPEECH 2020</li>
-  <li><strong><u>Zhihao Du</u></strong>, Jiqing Han, Xueliang Zhang. Double Adversarial Network Based Monaural Speech Enhancement for Robust Speech Recognition. INTERSPEECH 2020, https://github.com/ZhihaoDU/du2020dan</li>
-  <li>Yue Gu, <strong><u>Zhihao Du</u></strong>, Hui Zhang, Xueliang Zhang. An Efficient Joint Training Framework for Robust Small-Footprint Keyword Spotting. ICONIP 2020</li>
-  <li>Hongwei Song, Jiqing Han, Shiwen Deng. <strong><u>Zhihao Du</u></strong>. Acoustic scene classification by implicitly identifying distinct sound events, INTERSPEECH 2019</li>
-  <li><strong><u>Zhihao Du</u></strong>, Xueliang Zhang, Jiqing Han. Investigation of Monaural Front-End Processing for Robust Speech Recognition Without Retraining or Joint-Training. APSIPA 2019.</li>
-</ol>
-      
-<h3 id="preprints">Preprints（预印本）</h3>
+        <h3 class="sub">Journal Papers <span class="zh">期刊论文</span></h3>
+        <ol class="pubs">
+          <li><span class="me"><u>Zhihao Du</u></span>, Xueliang Zhang, Jiqing Han. A joint framework of denoising autoencoder and generative vocoder for monaural speech enhancement. <span class="venue">IEEE/ACM TASLP</span>, 2020. <a href="https://zhihaodu.github.io/dagv_demo/">View Demos</a></li>
+          <li>Yue Gu, <span class="me"><u>Zhihao Du</u><sup>†</sup></span>, Ying Shi, Shiliang Zhang, Qian Chen, Jiqing Han<sup>†</sup>. Enhancing the Robustness of Contextual ASR to Varying Biasing Information Volumes Through Purified Semantic Correlation Joint Modeling. <span class="venue">IEEE TASLP</span>, 2025.</li>
+          <li>Yue Gu, <span class="me"><u>Zhihao Du</u><sup>†</sup></span>, Ying Shi, Jiqing Han<sup>†</sup>, Yongjun He. Knowledge-Decoupled Functionally Invariant Path with Synthetic Personal Data for Personalized ASR. <span class="venue">IEEE SPL</span>, 2025.</li>
+        </ol>
 
-<ol>
-  <li><strong><u>Zhihao Du</u></strong>, Shiliang Zhang, Siqi Zheng, Zhijie Yan. Speaker Embedding-aware Neural Diarization for Flexible Number of Speakers with Textual Information. https://arxiv.org/abs/2111.13694.</li>
-</ol>
+        <h3 class="sub">Conference Papers <span class="zh">会议论文</span></h3>
+        <ol class="pubs">
+          <li>Guanrou Yang, Chen Yang, Qian Chen, Ziyang Ma, Wenxi Chen, Wen Wang, Tianrui Wang, Yifan Yang, Zhikang Niu, Wenrui Liu, Fan Yu, <span class="me"><u>Zhihao Du</u></span>, Zhifu Gao, ShiLiang Zhang, Xie Chen. EmoVoice: LLM-based Emotional Text-To-Speech Model with Freestyle Text Prompting. <span class="venue">ACM MM 2025</span></li>
+          <li>Qinglin Zhang, Luyao Cheng, Chong Deng, Qian Chen, Wen Wang, Siqi Zheng, Jiaqing Liu, Hai Yu, Chao-Hong Tan, <span class="me"><u>Zhihao Du</u></span>, ShiLiang Zhang. OmniFlatten: An End-to-end GPT Model for Seamless Voice Conversation. <span class="venue">ACL 2025</span></li>
+          <li>Changfeng Gao, <span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang. Differentiable Reward Optimization for LLM based TTS system. <span class="venue">INTERSPEECH 2025</span></li>
+          <li>Xiang Lyu, Yuxuan Wang, Tianyu Zhao, Hao Wang, Huadai Liu, <span class="me"><u>Zhihao Du</u></span>. Build LLM-based Zero-Shot Streaming TTS System with CosyVoice. <span class="venue">ICASSP 2025</span></li>
+          <li>Guanrou Yang, Fan Yu, Ziyang Ma, <span class="me"><u>Zhihao Du</u></span>, Zhifu Gao, Shiliang Zhang, Xie Chen. Enhancing Low-Resource ASR through Versatile TTS: Bridging the Data Gap. <span class="venue">ICASSP 2025</span></li>
+          <li>Ziyang Ma, Guanrou Yang, Yifan Yang, Zhifu Gao, Jiaming Wang, <span class="me"><u>Zhihao Du</u></span>, Fan Yu, Qian Chen, Siqi Zheng, ShiLiang Zhang, Xie Chen. Speech Recognition Meets Large Language Model: Benchmarking, Models, and Exploration. <span class="venue">AAAI 2025 (Oral)</span></li>
+          <li>Yue Gu, <span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Jiqing Han, Yongjun He. Personality-aware Training based Speaker Adaptation for End-to-end Speech Recognition. <span class="venue">INTERSPEECH 2024</span> <a href="https://www.isca-archive.org/interspeech_2024/gu24b_interspeech.pdf">[Paper]</a></li>
+          <li><span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Kai Hu, Siqi Zheng. FunCodec: A Fundamental, Reproducible and Integrable Open-source Toolkit for Neural Speech Codec. <span class="venue">ICASSP 2024</span></li>
+          <li>Mohan Shi, <span class="me"><u>Zhihao Du</u></span>, et al. A Comparative Study on Multichannel Speaker-Attributed ASR in Multi-Party Meetings. <span class="venue">APSIPA 2023</span></li>
+          <li>Yangze Li, Fan Yu, Yuhao Liang, Pengcheng Guo, Mohan Shi, <span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Lei Xie. SA-Paraformer: Non-Autoregressive End-To-End Speaker-Attributed ASR. <span class="venue">ASRU 2023</span></li>
+          <li>Yuhao Liang, Mohan Shi, Fan Yu, Yangze Li, Shiliang Zhang, <span class="me"><u>Zhihao Du</u></span>, Qian Chen, Lei Xie, Yanmin Qian, Jian Wu, Zhuo Chen, Kong Aik Lee, Zhijie Yan, Hui Bu. The Second Multi-Channel Multi-Party Meeting Transcription Challenge (M2MeT 2.0). <span class="venue">ASRU 2023</span></li>
+          <li>Yue Gu, <span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Qian Chen, Jiqing Han. Personality-aware Training based Speaker Adaptation for End-to-end Speech Recognition. <span class="venue">INTERSPEECH 2023</span> <a href="https://zhihaodu.github.io/gu2023pat.pdf">[Paper]</a></li>
+          <li>Mohan Shi, <span class="me"><u>Zhihao Du</u></span>, Qian Chen, Fan Yu, Yangze Li, Shiliang Zhang, Jie Zhang, Lirong Dai. CASA-ASR: Context-Aware Speaker-Attributed ASR. <span class="venue">INTERSPEECH 2023</span></li>
+          <li>Zhifu Gao, Zerui Li, Jiaming Wang, Haoneng Luo, Xian Shi, Mengzhe Chen, Yabin Li, Lingyun Zuo, <span class="me"><u>Zhihao Du</u></span>, Zhangyu Xiao, Shiliang Zhang. FunASR: A Fundamental End-to-End Speech Recognition Toolkit. <span class="venue">INTERSPEECH 2023</span></li>
+          <li>Jiaming Wang*, <span class="me"><u>Zhihao Du</u>*</span>, Shiliang Zhang. TOLD: A Novel Two-stage Overlap-aware Framework for Speaker Diarization. <span class="venue">ICASSP 2023</span> (equal contribution)</li>
+          <li><span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Siqi Zheng, Zhijie Yan. Speaker Overlap-aware Neural Diarization for Multi-party Meeting Analysis. <span class="venue">EMNLP 2022 (long paper)</span></li>
+          <li>Yuxiao Lin, <span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Fan Yu, Zhou Zhao, Fei Wu. Separate-to-Recognize: Joint Multi-target Speech Separation and Speech Recognition for Speaker-attributed ASR. <span class="venue">ISCSLP 2022</span></li>
+          <li>Fan Yu, Shiliang Zhang, Pengcheng Guo, Yuhao Liang, <span class="me"><u>Zhihao Du</u></span>, et al. MFCCA: Multi-Frame Cross-Channel Attention for Multi-speaker ASR in Multi-party Meeting Scenario. <span class="venue">SLT 2022</span></li>
+          <li>Fan Yu, <span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Yuxiao Lin, Lei Xie. A Comparative Study on Speaker-attributed ASR in Multi-party Meetings. <span class="venue">ICASSP 2022</span></li>
+          <li>Fan Yu, Shiliang Zhang, Pengcheng Guo, Yihui Fu, <span class="me"><u>Zhihao Du</u></span>, et al. Summary on the ICASSP 2022 Multi-channel Multi-party Meeting Transcription Grand Challenge. <span class="venue">ICASSP 2022</span></li>
+          <li>Fan Yu, Shiliang Zhang, Yihui Fu, Lei Xie, Siqi Zheng, <span class="me"><u>Zhihao Du</u></span>, et al. M2MeT: The ICASSP 2022 Multi-channel Multi-party Meeting Transcription Challenge. <span class="venue">ICASSP 2022</span></li>
+          <li>Hongwei Song, Jiqing Han, Shiwen Deng, <span class="me"><u>Zhihao Du</u></span>. Capturing Temporal Dependencies Through Future Prediction for CNN-Based Audio Classifiers. <span class="venue">ICASSP 2021</span></li>
+          <li><span class="me"><u>Zhihao Du</u></span>, Ming Lei, Jiqing Han, Shiliang Zhang. PAN: Phoneme-aware Network for Monaural Speech Enhancement. <span class="venue">ICASSP 2020</span></li>
+          <li><span class="me"><u>Zhihao Du</u></span>, Ming Lei, Jiqing Han, Shiliang Zhang. Self-Supervised Adversarial Multi-Task Learning for Vocoder-Based Monaural Speech Enhancement. <span class="venue">INTERSPEECH 2020</span></li>
+          <li><span class="me"><u>Zhihao Du</u></span>, Jiqing Han, Xueliang Zhang. Double Adversarial Network Based Monaural Speech Enhancement for Robust Speech Recognition. <span class="venue">INTERSPEECH 2020</span> <a href="https://github.com/ZhihaoDU/du2020dan">[Code]</a></li>
+          <li>Yue Gu, <span class="me"><u>Zhihao Du</u></span>, Hui Zhang, Xueliang Zhang. An Efficient Joint Training Framework for Robust Small-Footprint Keyword Spotting. <span class="venue">ICONIP 2020</span></li>
+          <li>Hongwei Song, Jiqing Han, Shiwen Deng, <span class="me"><u>Zhihao Du</u></span>. Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events. <span class="venue">INTERSPEECH 2019</span></li>
+          <li><span class="me"><u>Zhihao Du</u></span>, Xueliang Zhang, Jiqing Han. Investigation of Monaural Front-End Processing for Robust Speech Recognition Without Retraining or Joint-Training. <span class="venue">APSIPA 2019</span></li>
+        </ol>
 
-<h3 id="phd-thesis">PhD Thesis（博士论文）</h3>
+        <h3 class="sub">Preprints <span class="zh">预印本</span></h3>
+        <ol class="pubs">
+          <li><span class="me"><u>Zhihao Du</u></span>, Shiliang Zhang, Siqi Zheng, Zhijie Yan. Speaker Embedding-aware Neural Diarization for Flexible Number of Speakers with Textual Information. <a href="https://arxiv.org/abs/2111.13694">arXiv:2111.13694</a></li>
+        </ol>
 
-<p>RESEARCH ON MONAURAL SPEECH ENHANCEMENT BASED ON PRIOR INFORMATION IN DIFFERENT SEMANTIC LEVELS（基于不同语义层级先验信息的
-   单通道语音增强方法研究）.</p>
+        <h3 class="sub">PhD Thesis <span class="zh">博士论文</span></h3>
+        <p class="about-text">Research on Monaural Speech Enhancement Based on Prior Information in Different Semantic Levels（基于不同语义层级先验信息的单通道语音增强方法研究）.</p>
+        </details>
+      </section>
 
-<h2 id="审稿">Reviewer（审稿)</h2>
-<h3 id="期刊审稿">Journal（期刊)</h2>
-<ol>
-  <li>KNOSYS, Knowledge-Based Systems (IF=7.6)</li>
-  <li>TASLP, IEEE Transactions on Audio, Speech and Language Processing (IF=6.1)</li>
-  <li>SPECOM, Speech Communication (IF=2.9)</li>
-</ol>
-<h3 id="会议审稿">Conference（会议)</h2>
-<ol>
-  <li><strong>Program Committee</strong> for AAAI Conference on Artificial Intelligence (AAAI-26)</li>
-  <li>ACL, Association for Computational Linguistics Conferences</li>
-  <li>ACM MM, ACM Multimedia</li>
-  <li>IJCAI, International Joint Conference on Artificial Intelligence</li>
-  <li>ICASSP, International Conference on Acoustics, Speech and Signal Processing</li>
-  <li>INTERSPEECH, Conference of the International Speech Communication Association</li>
-  <li>IAML, International Conference on Asian Language Processing</li>
-  <li>ISCSLP, International Symposium on Chinese Spoken Language Processing</li>
-</ol>
+      <!-- Service -->
+      <section class="card">
+        <h2 class="section-title" id="service">Reviewer &amp; Service <span class="zh">审稿</span></h2>
 
-<h2 id="opensources">Open sources（开源代码）</h2>
-<ol>
-  <li>Widely-used speech features, https://github.com/ZhihaoDU/speech_feature_extractor, star 100+</li>
-</ol>
-  
-<h2 id="荣誉">Honors（荣誉）</h2>
-<ol>
-  <li>哈尔滨工业大学优秀博士论文提名（2021）</li>
-  <li>内蒙古自治区优秀毕业生（2015）</li>
-  <li>MCM Meritorious Winner</li>
-  <li>ACM/ICPC 二等奖</li>
-</ol>
-      
-<h2 id="Organization">Organization（组织）</h2>
-<ol>
-  <li>IEEE Member</li>
-  <li>SIGDAT Member</li>
-</ol>
+        <h3 class="sub">Journal <span class="zh">期刊</span></h3>
+        <ul class="plain grid-2">
+          <li><span class="abbr">KNOSYS</span>, Knowledge-Based Systems (IF=7.6)</li>
+          <li><span class="abbr">TASLP</span>, IEEE Trans. Audio, Speech and Language Processing (IF=6.1)</li>
+          <li><span class="abbr">SPECOM</span>, Speech Communication (IF=2.9)</li>
+        </ul>
 
-<h2 id="contact-me">Contact me（联系我）</h2>
+        <h3 class="sub">Conference <span class="zh">会议</span></h3>
+        <ul class="plain grid-2">
+          <li><span class="abbr">AAAI</span>, Conf. on Artificial Intelligence <em>(Program Committee)</em></li>
+          <li><span class="abbr">ACL</span>, Association for Computational Linguistics</li>
+          <li><span class="abbr">ACM MM</span>, ACM Multimedia</li>
+          <li><span class="abbr">SIGGRAPH Asia</span>, ACM Conf. on Computer Graphics and Interactive Techniques in Asia</li>
+          <li><span class="abbr">IJCAI</span>, Int'l Joint Conference on Artificial Intelligence</li>
+          <li><span class="abbr">ICASSP</span>, Int'l Conf. on Acoustics, Speech and Signal Processing</li>
+          <li><span class="abbr">INTERSPEECH</span>, Conf. of the Int'l Speech Communication Assoc.</li>
+          <li><span class="abbr">IALP</span>, Int'l Conf. on Asian Language Processing</li>
+          <li><span class="abbr">ISCSLP</span>, Int'l Symposium on Chinese Spoken Language Processing</li>
+        </ul>
+      </section>
 
-<p>TEL: +86-15600609952</p>
+      <!-- Open source -->
+      <section class="card">
+        <h2 class="section-title" id="opensource">Open Source <span class="zh">开源代码</span></h2>
+        <ul class="plain">
+          <li><strong>CosyVoice</strong> — Multilingual zero-shot TTS. <a href="https://github.com/FunAudioLLM/CosyVoice">github.com/FunAudioLLM/CosyVoice</a></li>
+          <li><strong>speech_feature_extractor</strong> — Widely-used speech features, 100+ stars. <a href="https://github.com/ZhihaoDU/speech_feature_extractor">github.com/ZhihaoDU/speech_feature_extractor</a></li>
+        </ul>
+      </section>
 
-<p>E-mails: duzhihao.china@gmail.com and zhihaodu0622@163.com</p>
+      <!-- Honors -->
+      <section class="card">
+        <h2 class="section-title" id="honors">Honors &amp; Membership <span class="zh">荣誉 &amp; 组织</span></h2>
+        <h3 class="sub">Honors <span class="zh">荣誉</span></h3>
+        <ul class="plain grid-2">
+          <li>哈尔滨工业大学优秀博士论文提名（2021）</li>
+          <li>内蒙古自治区优秀毕业生（2015）</li>
+          <li>MCM Meritorious Winner</li>
+          <li>ACM/ICPC 二等奖</li>
+        </ul>
+        <h3 class="sub">Organization <span class="zh">组织</span></h3>
+        <ul class="plain grid-2">
+          <li>IEEE Member</li>
+          <li>SIGDAT Member</li>
+        </ul>
+      </section>
 
-      
+      <!-- Contact -->
+      <section class="card">
+        <h2 class="section-title" id="contact">Contact <span class="zh">联系我</span></h2>
+        <div class="contact-row">
+          <a class="chip" href="tel:+8615600609952">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            +86-15600609952
+          </a>
+          <a class="chip" href="mailto:duzhihao.china@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            duzhihao.china@gmail.com
+          </a>
+          <a class="chip" href="mailto:zhihaodu0622@163.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            zhihaodu0622@163.com
+          </a>
+        </div>
+      </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
+
+    <footer>
+      &copy; <span id="year"></span> Zhihao Du (杜志浩) · Built with care.
+    </footer>
+
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const btt = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) btt.classList.add('show');
+        else btt.classList.remove('show');
+      });
+
+      // Theme toggle
+      const root = document.documentElement;
+      const toggle = document.getElementById('themeToggle');
+      function currentTheme() {
+        return root.getAttribute('data-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      }
+      toggle.addEventListener('click', () => {
+        const next = currentTheme() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    </script>
   </body>
 </html>
-
